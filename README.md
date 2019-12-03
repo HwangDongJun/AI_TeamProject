@@ -12,10 +12,10 @@
         2. Class Imbalance 문제가 있음
     - 개선점:
         1. Misclassification에 대한 Relabelling 작업 수행
-![relabelling](./data_relabelling.png)
+![relabelling](./img/data_relabelling.png)
             - deleted를 제외한 이미지는 Relabelling전 이미지 → **현재 Relabelling 완료**
         2. Class Imbalance에 대한 Data Augmentation 작업 수행
-![dataaugmentation](./data_augmentation.png)
+![dataaugmentation](./img/data_augmentation.png)
             - Disgust 이미지 관련해서 Data augmentation 수행 (옵션은 랜덤으로 아래와 같이 6가지 수행)
                 - rotation_range=20
                 - width_shift_range=0.1
@@ -33,6 +33,7 @@
 ### Face Recognition (얼굴 인식 기법)
 - 우리는 Face Detection과 Landmark를 동시 검출하는 알고리즘인 [MTCNN](https://github.com/ipazc/mtcnn)(Multi-task Cascaded Convolutional Neural Networks)을 사용하여 Face Recognition을 수행
 ![mtcnn](./img/mtcnn.png)
+
 - MTCNN을 통해 양쪽 눈, 코, 입꼬리에 대한 좌표를 추출하여 Face Alignment에 이용
 ---
 ### Face Alignment (얼굴 정렬 기법)
