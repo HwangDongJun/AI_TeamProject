@@ -33,7 +33,6 @@
 ### Face Recognition (얼굴 인식 기법)
 - 우리는 Face Detection과 Landmark를 동시 검출하는 알고리즘인 [MTCNN](https://github.com/ipazc/mtcnn)(Multi-task Cascaded Convolutional Neural Networks)을 사용하여 Face Recognition을 수행
 ![mtcnn](./img/mtcnn.png)
-
 - MTCNN을 통해 양쪽 눈, 코, 입꼬리에 대한 좌표를 추출하여 Face Alignment에 이용
 ---
 ### Face Alignment (얼굴 정렬 기법)
@@ -44,7 +43,9 @@
 4. 분류에 필요한 이미지를 얻기 위한 크기 조절
 ---
 ### Emotion Classification (감정 분류 기법)
+
 ![structure](./img/sturc.png)
+
 - Filter의 크기는 3 × 3이며, Stride는 1로 이동
 - Convolution Layer 2개당  Max Pooling을 수행
 - Zero Padding, Batch Normalization, Dropout, Learning rate decay 방법 사용
