@@ -43,9 +43,7 @@
 4. 분류에 필요한 이미지를 얻기 위한 크기 조절
 ---
 ### Emotion Classification (감정 분류 기법)
-
-![structure](./img/sturc.png)
-
+![structure](./img/struc.png)
 - Filter의 크기는 3 × 3이며, Stride는 1로 이동
 - Convolution Layer 2개당  Max Pooling을 수행
 - Zero Padding, Batch Normalization, Dropout, Learning rate decay 방법 사용
